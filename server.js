@@ -17,7 +17,7 @@ const { credentials } = require('./middlewares/credentials')
 
 connecteDB()
 
-app.use(credentials)
+//app.use(credentials)
 
 app.use(cors(corsOptions))
 
