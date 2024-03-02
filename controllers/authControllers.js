@@ -52,12 +52,12 @@ const loginUser = catchAsyncError( async (req, res, next) => {
 
       const token = await user.getJWTToken()
 
-      res.cookie('token', token, {
+      res.cookie( 'token', token, {
         httpOnly : true,
         secure : true,
-        sameSite : 'none',
+        sameSite : 'None',
         maxAge : 7 * 24 * 60 * 60 * 1000
-      })
+    })
       
       return res.status(200).json({
           success : true,
