@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "server.js",
     "dev": "export NODE_ENV=development&&nodemon server.js",
     "prod": "export NODE_ENV=production&&nodemon server.js",
     "seeder": "node utils/seeder.js"
