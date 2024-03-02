@@ -6,7 +6,7 @@ import Loader from '../../pages/Loader'
 const ProtectedRoute = ({children, isAdmin}) => {
     const { isAuthenticated, loading, user } = useSelector((state) => state.authState)
 
-    /*if(!isAuthenticated && !loading){
+    if(!isAuthenticated && !loading){
         return <Navigate to='/login'/>
     }
 
@@ -19,7 +19,7 @@ const ProtectedRoute = ({children, isAdmin}) => {
 
     if(loading){
         return <Loader/>
-    }*/
+    }
     return children
 }
 
