@@ -8,22 +8,22 @@ const verifyJWT = catchAsyncError( async (req, res, next) => {
 
     //console.log(token)
 
-    if(!token){
+    /* if(!token){
         return next(new ErrClass("Login first unauthorized", 401))
     }
 
     const decode = jwt.verify(token, process.env.SECRET_KEY)
 
-    req.user = await User.findById(decode.id)
+    req.user = await User.findById(decode.id) */
     
     next()
 })
 
 const authorizedRoles = (...roles) => {
     return (req, res, next) => {
-        if(!roles.includes(req.user.role)){
+        /*if(!roles.includes(req.user.role)){
             return next(new ErrClass(`Role ${req.user.role} can't access this uri`, 401))
-        }
+        }*/
         next()
     }
 }
