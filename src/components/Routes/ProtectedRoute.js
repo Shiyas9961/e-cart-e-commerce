@@ -19,8 +19,8 @@ const ProtectedRoute = ({children, isAdmin}) => {
 
     if(loading){
         return <Loader/>
-    }
-    return children*/
+    }*/
+    return children
 }
 
 export default ProtectedRoute
