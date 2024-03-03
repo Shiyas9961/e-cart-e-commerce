@@ -42,7 +42,7 @@ const Header = () => {
                                 <span>{user?.username.split(" ")[0]}</span>
                             </Dropdown.Toggle>
                             <Dropdown.Menu>
-                                { user.role === 'admin' && <Dropdown.Item onClick={() => navigate('/admin/dashboard')}>Dashboard</Dropdown.Item>}
+                                <Dropdown.Item onClick={() => navigate('/admin/dashboard')}>Dashboard</Dropdown.Item>
                                 <Dropdown.Item onClick={() => navigate('/myprofile')}>Profile</Dropdown.Item>
                                 <Dropdown.Item onClick={() => navigate('/orders')} >Orders</Dropdown.Item>
                                 <Dropdown.Item onClick={handleLogOut} className='text-danger'>Logout</Dropdown.Item>
