@@ -15,11 +15,11 @@ const ProtectedRoute = ({children, isAdmin}) => {
             return <Navigate to='/'/>
         }
         return children
-    }
+    }*/
 
     if(loading){
         return <Loader/>
-    }*/
+    }
     return children
 }
 
