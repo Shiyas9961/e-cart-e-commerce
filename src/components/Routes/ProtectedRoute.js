@@ -10,7 +10,7 @@ const ProtectedRoute = ({children, isAdmin}) => {
         return <Navigate to='/login'/>
     }
 
-    if(isAuthenticated){
+    /*if(isAuthenticated){
         if(isAdmin === true && user.role !== 'admin'){
             return <Navigate to='/'/>
         }
@@ -20,7 +20,7 @@ const ProtectedRoute = ({children, isAdmin}) => {
     if(loading){
         return <Loader/>
     }
-    return children
+    return children*/
 }
 
 export default ProtectedRoute
